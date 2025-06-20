@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/gameImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedCornerImage"
+            tools:src="@drawable/placeholder"/>
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gameImage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Adopt Me!"/>
+
+        <TextView
+            android:id="@+id/gameGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/gameImage"
+            app:layout_constraintTop_toBottomOf="@id/gameTitle"
+            tools:text="Role-Playing"/>
+
+        <TextView
+            android:id="@+id/gamePlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="#674fa3"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/gameGenre"
+            app:layout_constraintTop_toTopOf="@id/gameGenre"
+            tools:text="500K+ Players" />
+
+        <TextView
+            android:id="@+id/gameRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/gameImage"
+            app:layout_constraintTop_toBottomOf="@id/gameGenre"
+            tools:text="Rating: 4.5/5"/>
+
+        <Button
+            android:id="@+id/playNowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#674fa3"
+            android:text="Play Now"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/gameGenre"
+            app:layout_constraintTop_toBottomOf="@id/gameRating" />
+
+        <Button
+            android:id="@+id/viewDetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#674fa3"
+            android:text="View Details"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/playNowButton"
+            app:layout_constraintTop_toTopOf="@id/playNowButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView> 

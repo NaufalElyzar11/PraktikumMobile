@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gameListFragment">
+
+    <fragment
+        android:id="@+id/gameListFragment"
+        android:name="com.example.modul3xml.ui.RobloxGameListFragment"
+        android:label="Roblox Games">
+        <action
+            android:id="@+id/actionGameListToGameDetail"
+            app:destination="@id/gameDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameDetailFragment"
+        android:name="com.example.modul3xml.ui.RobloxGameDetailFragment"
+        android:label="Game Details">
+        <argument
+            android:name="game"
+            app:argType="com.example.modul3xml.model.RobloxGame" />
+    </fragment>
+
+</navigation> 
