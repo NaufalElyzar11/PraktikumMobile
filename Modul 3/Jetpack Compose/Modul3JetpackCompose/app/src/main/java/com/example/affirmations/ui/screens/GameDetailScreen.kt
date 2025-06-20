@@ -58,7 +58,7 @@ fun GameDetailScreen(
                     .padding(paddingValues)
                     .verticalScroll(rememberScrollState())
             ) {
-                // Hero Image
+                
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -70,7 +70,7 @@ fun GameDetailScreen(
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop
                     )
-                    // Gradient overlay
+                    
                     Box(
                         modifier = Modifier
                             .fillMaxSize()
@@ -83,7 +83,7 @@ fun GameDetailScreen(
                                 )
                             )
                     )
-                    // Title overlay
+                    
                     Column(
                         modifier = Modifier
                             .align(Alignment.BottomStart)
@@ -102,13 +102,13 @@ fun GameDetailScreen(
                     }
                 }
 
-                // Content
+                
                 Column(
                     modifier = Modifier
                         .padding(16.dp)
                         .fillMaxWidth()
                 ) {
-                    // Quick Info Section
+                    
                     ElevatedCard(
                         modifier = Modifier.fillMaxWidth(),
                         colors = CardDefaults.elevatedCardColors(
@@ -131,7 +131,7 @@ fun GameDetailScreen(
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Description Section
+                    
                     Text(
                         text = "About",
                         style = MaterialTheme.typography.titleLarge,
@@ -146,7 +146,7 @@ fun GameDetailScreen(
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Developer Info
+                    
                     Text(
                         text = "Developer",
                         style = MaterialTheme.typography.titleLarge,
@@ -161,7 +161,7 @@ fun GameDetailScreen(
 
                     Spacer(modifier = Modifier.height(24.dp))
 
-                    // Action Button
+                    
                     Button(
                         onClick = {
                             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(game.gameUrl))
