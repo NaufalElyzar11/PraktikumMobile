@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Header Image -->
+        
         <ImageView
             android:id="@+id/gameHeaderImage"
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/adopt_me"/>
 
-        <!-- Game Title -->
+        
         <TextView
             android:id="@+id/gameTitle"
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             app:layout_constraintTop_toBottomOf="@id/gameHeaderImage"
             tools:text="Adopt Me!"/>
 
-        <!-- Info Cards Container -->
+        
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/infoContainer"
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                 android:padding="16dp"
                 android:weightSum="3">
 
-                <!-- Genre -->
+                
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                         tools:text="Role-Playing"/>
                 </LinearLayout>
 
-                <!-- Rating -->
+                
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                         tools:text="4.5/5"/>
                 </LinearLayout>
 
-                <!-- Released -->
+                
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- About Section -->
+        
         <TextView
             android:id="@+id/aboutTitle"
             android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
             app:layout_constraintTop_toBottomOf="@id/aboutTitle"
             tools:text="A role-playing game where players can adopt and raise pets, decorate homes, and interact with other players. Features include pet trading, house customization, and mini-games."/>
 
-        <!-- Developer Section -->
+        
         <TextView
             android:id="@+id/developerTitle"
             android:layout_width="wrap_content"
@@ -166,7 +166,7 @@
             app:layout_constraintTop_toBottomOf="@id/developerTitle"
             tools:text="DreamCraft"/>
 
-        <!-- Play Now Button -->
+        
         <com.google.android.material.button.MaterialButton
             android:id="@+id/playNowButton"
             android:layout_width="match_parent"
